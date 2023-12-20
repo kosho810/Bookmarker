@@ -1,0 +1,82 @@
+body{
+    background-color: #feecd3;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: "header-font";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "title-font";
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+
+.title>h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    font-family: "header-font";
+    
+
+}
+
+
+
+.layer {
+content: "";
+position: absolute;
+width: 18%;
+height: 25%;
+left: 50%;
+transform: translateX(-50%);
+bottom: -1px;
+background-color: #fec260;
+z-index: -1;
+transition: height 0.5s;
+}
+h1:hover .layer{
+    height: 50%;
+}
+.title{
+    padding-bottom: 70px;
+}
+
+.inputs{
+   width: 90%; 
+   border-top: 2px dotted #352e28;
+   border-bottom: 2px dotted #352e28;
+   
+}
+.inputs>h2{
+    font-size: 23px;
+    font-family: "title-font";
+background-image: linear-gradient(to right, #369452, #cdc353);
+background-clip: text;
+color: transparent;
+}
+.fa-bookmark{
+color: #8bbd24;
+
+
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+  }
+  
+.submit>button{
+    padding: 6px 48px;
+    background-color: #d1512d;
+    color: white;
+}
+.submit>button:hover{
+    background-color: #a03315;
+    color: white;
+}
+
+
